@@ -475,7 +475,7 @@ export interface ApiAutorAutor extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    autors: Schema.Attribute.Relation<'oneToMany', 'api::articulo.articulo'>;
+    articulo: Schema.Attribute.Relation<'oneToMany', 'api::articulo.articulo'>;
     bio: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
